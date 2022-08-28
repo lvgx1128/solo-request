@@ -1,8 +1,10 @@
 # solo-request
 
+solo-request 基于`axios`和`ahooks的useRequest`封装的 react 请求库
+
 ### **安装**
 
-solo-form 依赖 `axios` 和 `ahooks的useRequest`，使用前请先安装 3.0 版本以上的[ahooks](https://ahooks.js.org/zh-CN/hooks/use-request/index)和[axios](https://axios-http.com/docs/intro)
+solo-request 依赖 `axios` 和 `ahooks的useRequest`，使用前请先安装 3.0 版本以上的[ahooks](https://ahooks.js.org/zh-CN/hooks/use-request/index)和[axios](https://axios-http.com/docs/intro)
 
 ```sh
 npm install solo-request
