@@ -1,0 +1,42 @@
+{
+  "name": "solo-request",
+  "version": "1.0.0",
+  "keywords": ["React", "axios", "ahooks", "useRequest", "Turbo"],
+  "files": [
+    "lib",
+    "es",
+    "README.md",
+    "package.json"
+  ],
+  "lint-staged": {
+    "*.{js,jsx,less,md,json}": [
+      "prettier --write"
+    ],
+    "*.ts?(x)": [
+      "prettier --parser=typescript --write"
+    ]
+  },
+  "bugs": {
+    "url": "https://github.com/lvgx1128/solo-request/issues"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:lvgx1128/solo-request.git"
+  },
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "scripts": {
+    "release": "np --yolo=true"
+  },
+  "dependencies": {
+    "nookies": "^2.5.2"
+  },
+  "peerDependencies": {
+    "ahooks": "^3.7.0",
+    "axios": "^0.27.2"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  }
+}

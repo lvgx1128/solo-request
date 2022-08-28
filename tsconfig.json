@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "ESNext", 
+    "module": "ESNext",
+    "lib": ["esnext", "dom", "dom.iterable", "scripthost"], 
+    "declaration": true,
+    "declarationMap": false,
+    "declarationDir": "./packages/types",
+    "noEmit": true, 
+    "importHelpers": true,
+    "strict": true,
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "allowSyntheticDefaultImports": true, 
+    "sourceMap": false, 
+    "experimentalDecorators": true,
+    "pretty": true, 
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "jsx": "react-jsx",
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  },
+  "include": ["src/**/*.ts", "__tests__"],
+  "exclude": ["node_modules"]
+}
