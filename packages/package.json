@@ -1,7 +1,13 @@
 {
   "name": "solo-request",
-  "version": "1.0.0",
-  "keywords": ["React", "axios", "ahooks", "useRequest", "Turbo"],
+  "version": "1.0.1",
+  "keywords": [
+    "React",
+    "axios",
+    "ahooks",
+    "useRequest",
+    "Turbo"
+  ],
   "files": [
     "lib",
     "es",
@@ -27,7 +33,7 @@
   "main": "lib/index.js",
   "module": "es/index.js",
   "scripts": {
-    "release": "np --yolo=true"
+    "release": "np --yolo=true --skip-2fa"
   },
   "dependencies": {
     "nookies": "^2.5.2"
