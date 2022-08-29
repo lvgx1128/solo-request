@@ -3,7 +3,13 @@ import type { AxiosRequestConfig, AxiosResponse } from 'axios'
 import { parseCookies } from 'nookies'
 import { baseConfig } from './config'
 
-const instance = axios.create(baseConfig) as any
+const instance = axios.create(baseConfig)
+
+type TypeAipResponse = {
+  code?: number
+  data?: any
+  [key: string]: any
+}
 
 export function initInstance(
   request?: (req: AxiosRequestConfig) => AxiosRequestConfig,
@@ -46,7 +52,7 @@ export function initInstance(
  * @param {*} [config] config.intact是否是完整的url
  * @returns {Promise<T>}
  */
-export function post(url: string, data?: Record<string, any>, conf?: Record<string, any>): Promise<AxiosResponse> {
+export function post(url: string, data?: Record<string, any>, conf?: Record<string, any>): Promise<TypeAipResponse> {
   try {
     const config = conf || {}
     return instance({
@@ -60,10 +66,9 @@ export function post(url: string, data?: Record<string, any>, conf?: Record<stri
     console.log(error)
     return Promise.reject(error)
   }
-  ;``
 }
 
-export function get(url: string, data?: Record<string, any>, conf?: Record<string, any>): Promise<AxiosResponse> {
+export function get(url: string, data?: Record<string, any>, conf?: Record<string, any>): Promise<TypeAipResponse> {
   try {
     const config = conf || {}
     return instance({
