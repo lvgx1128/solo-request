@@ -33,7 +33,7 @@
   },
   "main": "lib/index.js",
   "module": "es/index.js",
-  "types": "./types/inbex.d.ts",
+  "types": "types/index.d.ts",
   "scripts": {
     "release": "np --yolo=true --skip-2fa"
   },
