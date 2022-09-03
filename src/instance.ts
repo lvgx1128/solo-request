@@ -1,6 +1,5 @@
 import axios from 'axios'
 import type { AxiosRequestConfig, AxiosResponse } from 'axios'
-import { parseCookies } from 'nookies'
 import { baseConfig } from './config'
 
 const instance = axios.create(baseConfig)
@@ -17,13 +16,6 @@ export function initInstance(
 ) {
   instance.interceptors.request.use(
     (conf: AxiosRequestConfig) => {
-      const cookies = parseCookies()
-      if (cookies?._token) {
-        if (!conf.headers) {
-          conf.headers = {}
-        }
-        conf.headers.token = cookies._token
-      }
       if (!request) {
         return conf
       }

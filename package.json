@@ -1,6 +1,6 @@
 {
   "name": "solo-request",
-  "version": "1.0.2",
+  "version": "1.0.5",
   "description": "",
   "main": "index.js",
   "keywords": ["React", "axios", "ahooks", "useRequest", "Turbo"],
@@ -64,8 +64,5 @@
   "peerDependencies": {
     "ahooks": "^3.7.0",
     "axios": "^0.27.2"
-  },
-  "dependencies": {
-    "nookies": "^2.5.2"
   }
 }
